@@ -9,7 +9,7 @@ Given ('I open login page', () => {
 When ('I fill username with {string}', username => {
    LoginPage.fillUsername (username)
 })
-And ('I fill password with {string}.', password => {
+And ('I fill password with {string}', password => {
     LoginPage.fillPassword (password)
  })
 
@@ -25,16 +25,3 @@ Then ('I should see homepage', () => {
 Then ('I should see error message', () => {
     LoginPage.shouldShowErrorMessage()
 })
-
-
-// When ('I submit login', () => {
-    //fill username
-    // cy.get('#user_login').type('username')
-    //fill password
-   // cy.get('#user_password').type('password')
-    //submit form
-    //cy.get('input[name="submit"]').click()
-
-   // LoginPage.fillUsername('username')
-   // LoginPage.fillPassword('password')
-   // LoginPage.submit()})
