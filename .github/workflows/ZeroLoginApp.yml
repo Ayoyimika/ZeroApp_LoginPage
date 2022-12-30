@@ -1,5 +1,13 @@
 name: E2E on Chrome headed
-on: [push]
+on: 
+  push:
+    branches: 
+      - main
+      
+  #Set your workflow to run every day of the week from Monday to Friday at 2:00 UTC
+  schedule:
+   - cron: "0 3 * *  1-5"
+ 
 jobs:
   cypress-run:
     name: Cypress run
