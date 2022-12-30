@@ -27,6 +27,6 @@ jobs:
            # pass the Cypress Cloud record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # pass GitHub token to allow accurately detecting a build vs a re-run build
-          GITHUB_TOKEN: 059b9ae0-a13a-4ce5-9635-407daaff6a5f
+          GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
            # pass the project ID from the secrets through environment variable
-          CYPRESS_PROJECT_ID: 3xmw3x
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
